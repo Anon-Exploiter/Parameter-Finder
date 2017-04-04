@@ -1,4 +1,8 @@
 <?php
+/*  Use With CLI-PHP
+A Tool By An0n 3xPloiTeR && Inj3ctor Osman :) :D
+Changing Author Name Wont Make You One :)
+*/
 error_reporting(0);
 if (isset($argv[0])) {
 echo "        
@@ -18,7 +22,7 @@ ______                              _             ______ _           _
 if ($argv[1] == "-u") {
 	if (!file_exists("dom.php")) {
 	$get = @file_get_contents("https://raw.githubusercontent.com/subins2000/phpwebcrawler/master/simple_html_dom.php");
-	@file_put_contents("dom.php", $get);
+	@file_put_contents("dom.php", $get); // Downloads dom.php File
 	}
 	require 'dom.php';
 	$crawled_urls=array();
@@ -62,14 +66,14 @@ if ($argv[1] == "-u") {
 	    $found_urls[$enurl]=1;
 	    if (preg_match('/=/',$url)){
 			echo $url."\n";
-			}
+	     }
 	    }
 	   }
 	  }
 	}
 	echo "Result:\n";
 	crawl_site($argv[2]);
-	echo "\n\tCrawling Done ~ An0n 3xPloiTeR\n\n";
+	echo "\n\tCrawling Done ~ An0n 3xPloiTeR\n\n"; /* Have Fun :D */
 } else {
 	echo "\nThere Was Some Error In Your Input !!!\n";
 }

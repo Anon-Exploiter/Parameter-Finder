@@ -1,11 +1,8 @@
 # Parameter-Finder
-It Can Be Very Useful In Case Of Finding Parameters Of Php Files In A Site
-
-### P.S ~ For SQL Injectors :D
-Specially For Me :3 
+It Can Be Very Useful In Case Of Finding Input Parameters in files using dorking (i.e. google based)
 
 ### Working:
-It Just Downloads a dom.php File and you dont need to do anything but just keep sitting and typing
+Dependency: dom.php 
 php crawler.php -u yoururlhere.com
 
 ### Note
